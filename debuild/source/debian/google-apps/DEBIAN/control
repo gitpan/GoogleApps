@@ -1,0 +1,12 @@
+Package: google-apps
+Version: 0.001-1
+Architecture: all
+Maintainer: Joenio Costa <joenio@colivre.coop.br>
+Installed-Size: 61
+Depends: perl, libmodern-perl-perl, libmoose-perl, libmoosex-app-cmd-perl, libvuser-google-api-perl
+Section: perl
+Priority: optional
+Homepage: http://search.cpan.org/dist/GoogleApps/
+Description: command line tool to manage Google Apps via API 2.0
+ command line tool written in Perl to manage Google Apps via API 2.0 by using
+ VUser::Google::API module.

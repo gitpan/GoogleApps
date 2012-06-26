@@ -1,0 +1,12 @@
+ddd43f234da19eb7aad52f8d145ddfa0  usr/bin/google-apps
+99ea6f7158092bb7e30237629b188e88  usr/bin/pam_script_passwd
+f2ecffffc496c17e35b3f279238d888f  usr/share/doc/google-apps/changelog.Debian.gz
+894578ce084789512511ab2884413eb8  usr/share/doc/google-apps/copyright
+ff4f09011d5bbfe917cf28c6c5f29feb  usr/share/doc/google-apps/examples/google-apps.conf
+223037a3595792f8019592794bf36235  usr/share/man/man1/google-apps.1p.gz
+7e557cfd9e36df1fe87da75ea027bb38  usr/share/perl5/GoogleApps.pm
+acadaf27d5f01d896eaa8b0a8414423d  usr/share/perl5/GoogleApps/Command/create.pm
+081601cc46141839063d3bb5eae99db5  usr/share/perl5/GoogleApps/Command/delete.pm
+a6310ddeb2d8cb628198f9e6a17bbb20  usr/share/perl5/GoogleApps/Command/retrieve.pm
+1fa9464f6c0c25020e2204addd586d6d  usr/share/perl5/GoogleApps/Command/update.pm
+943d8e3ecc06a17ecc2f817b2561bd43  usr/share/perl5/GoogleApps/TestClass.pm
