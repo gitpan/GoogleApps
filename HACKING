@@ -8,7 +8,10 @@ Write new commands
 
 Create file under lib/GoogleApps/Command/ (like retrieve.pm)
 
-(see how write commands https://metacpan.org/module/MooseX::App::Cmd::Command)
+see:
+* how to write App::Cmd commands http://metacpan.org/module/MooseX::App::Cmd::Command)
+* how to manage with Google API http://search.cpan.org/~rsmith/VUser-Google-Api-1.0.1/
+* if needed see Google API doc http://developers.google.com/google-apps/provisioning/auth
 
 Running tests
 -------------
@@ -21,31 +24,18 @@ $ dzil test
 
 dzil will build package before run tests.
 
-Using with pam-script module
-----------------------------
-
-The pam-script PAM module allow executes any script like pam_exec, but 
-
-that way, it is possible to catch a call to passwd in order to update the
-password for user in Google Apps when admins change its password under Linux.
-
-google-apps comes with a shell script pam_script_passwd to be used by
-pam-script module.
-
-1) install the libpam-script
-   # apt-get install libpam-script
-
-2) If you are syncing passwords with samba as Domain NT, then you should run
-   # pdbedit -P "min password length" -C 8
-
 Generating Debian PKG
 ---------------------
 
+Update debian/changelog
+
+$ dch -v <version number>
+
 Install Perl Module Dist::Zilla::Deb
 
-run: dzil debuild
+$ dzil debuild
 
-deb packahe will be generated under debuild directory
+package will be generated under debuild directory
 
 Bug/Issue tracking
 ------------------
@@ -54,3 +44,16 @@ Install 'ticgit' to see the list of issues. Ticgit is a issue tracking system
 built on top of Git.
 
 $ ti list
+
+Releasing new version to CPAN
+-----------------------------
+
+Before release, delete any untracked files, then:
+
+$ dzil release
+
+It will:
+
+* run tests
+* build a tarball
+* upload to the CPAN

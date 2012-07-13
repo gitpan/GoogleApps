@@ -17,7 +17,6 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "GoogleApps",
   "EXE_FILES" => [
-    "bin/pam_script_passwd",
     "bin/google-apps"
   ],
   "LICENSE" => "gpl",
@@ -36,7 +35,7 @@ my %WriteMakefileArgs = (
     "VUser::Google::Provisioning::V2_0" => 0,
     "strict" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

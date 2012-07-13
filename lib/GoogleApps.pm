@@ -7,6 +7,8 @@ use Config::Auto;
 extends qw(MooseX::App::Cmd);
 # ABSTRACT: Base class for all commands
 
+our $VERSION = '0.002';
+
 has api => (
    isa => 'VUser::Google::Provisioning::V2_0',
    is => 'ro',

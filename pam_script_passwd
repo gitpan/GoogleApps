@@ -1,8 +1,11 @@
 #!/bin/sh
 
-# /usr/share/libpam-script/pam_script_passwd
-
-# add to /etc/pam.d/passwd
+# 1. install libpam-script package
+#
+# 2. copy this file to:
+# /usr/share/libpam-script/
+#
+# 3. add to the /etc/pam.d/passwd following line:
 # password optional pam_script.so pam_script_passwd
 
 if [ ! -z $PAM_SERVICE ] && [ $PAM_SERVICE = 'passwd' ]; then

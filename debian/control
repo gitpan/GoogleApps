@@ -19,7 +19,8 @@ Depends: ${misc:Depends}, ${perl:Depends},
  libmoose-perl,
  libmoosex-app-cmd-perl,
  libvuser-google-api-perl,
- perl
+ perl,
+ libconfig-auto-perl
 Description: command line tool to manage Google Apps via API 2.0
  command line tool written in Perl to manage Google Apps via API 2.0 by using
  VUser::Google::API module.
